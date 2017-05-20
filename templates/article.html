@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h2 class="post-title">{{ post.title }}</h2>
+
+    <p >Time:  <a href="#">{{ post.date_time }} &nbsp;&nbsp;&ndash;</a> <a  href="#">{{ post.category }}</a></p>
+
+    <p>{{ post.content }}</p>
+<!-- /.blog-post -->
+
+{% endblock %}

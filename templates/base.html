@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" name="viewport" content ="width=device-width,
+	                                                initial-scale=1.0,
+	                                                maximum-scale=1.0,
+                                     				user-scalable=no">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>blog</h1>
+       <!-- <p>重置窗口大小，查看响应式效果！</p>-->
+    </div>
+
+    <ol class="breadcrumb">
+        <li><a href="#" style="font-size: 16px">Home</a></li>
+        <li><a href="#" style="font-size: 16px">python</a></li>
+        <li><a href="#" style="font-size: 16px">java</a></li>
+        <li><a href="#" style="font-size: 16px">mysql</a></li>
+    </ol>
+
+    <div class="row">
+        <div class="col-sm-9">
+            {% for post in post_list %}
+                <div class="row-sm-4">
+                {% block content%}
+                {% endblock %}
+                </div>
+            {% endfor %}
+
+            <ul class="pagination">
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+        </div>
+
+
+        <div class="col-sm-3">
+            <h3>刘源</h3>
+            <img src="templates/img/ly.jpg" alt="..." width="150dp" height="150dp" class="img-circle">
+        </div>
+    </div>
+    <!--分頁-->
+
+</div>
+
+</body>
+</html>
